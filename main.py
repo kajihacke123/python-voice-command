@@ -45,16 +45,24 @@ def dekdoydev(data):
         speak("ได้เลยครับ youtube music นะครับ")
         os.system("start https://music.youtube.com")
 
+    if "เปิดเพลง" in data:
+        speak("ได้เลยครับ youtube music นะครับ")
+        os.system("start https://music.youtube.com")
+
     if "เล่าเรื่องตลกให้ฟังหน่อย" in data:
         speak("ไม่ได้เป็นคนตลกครับ ถ้าจะฟังเรื่องละ 20 บาทครับ")
 
     if "เปิด Excel หน่อย" in data:
-        speak("ได้เลยค่ะ Excel นะครับ")
+        speak("ได้เลยครับ Excel นะครับ")
+        os.system("start Excel")
+
+    if "เปิด Excel" in data:
+        speak("ได้เลยครับ Excel นะครับ")
         os.system("start Excel")
 
     if "แผนที่ประเทศไทย" in data:
         data = data.split(" ")
-        speak("รอสักครู่คะพี่เกจิ เดี๋ยวเปิดแผนที่ประเทศไทยให้ครับ")
+        speak("รอสักครู่ครับพี่เกจิ เดี๋ยวเปิดแผนที่ประเทศไทยให้ครับ")
         os.system("start https://www.google.co.th/maps/place/t...")
     
 #Starting Conversation
