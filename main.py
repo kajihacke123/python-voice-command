@@ -36,31 +36,31 @@ def dekdoydev(data):
         speak("ว่าไงครับ")
 
     if "สบายดีไหม" in data:
-        speak("ตามสภาพค่ะ ช่วงฝนตก ต้องรักษาสุขภาพนะคะ")
+        speak("ตามสภาพครับ ช่วงฝนตก ต้องรักษาสุขภาพนะครับ")
     
     if "กี่โมงแล้ว" in data:
         speak(ctime())
 
     if "เปิดเพลงหน่อย" in data:
-        speak("ได้เลยค่ะ sportify นะคะ")
+        speak("ได้เลยครับ youtube music นะครับ")
         os.system("start https://music.youtube.com")
 
     if "เล่าเรื่องตลกให้ฟังหน่อย" in data:
-        speak("ไม่ได้เป็นคนตลกค่ะ ถ้าจะฟังเรื่องละ 20 บาทค่ะ")
+        speak("ไม่ได้เป็นคนตลกครับ ถ้าจะฟังเรื่องละ 20 บาทครับ")
 
     if "เปิด Excel หน่อย" in data:
-        speak("ได้เลยค่ะ Excel นะคะ")
+        speak("ได้เลยค่ะ Excel นะครับ")
         os.system("start Excel")
 
     if "แผนที่ประเทศไทย" in data:
         data = data.split(" ")
-        speak("รอสักครู่คะพี่วรากร เดี๋ยวเปิดแผนที่ประเทศไทยให้ค่ะ")
+        speak("รอสักครู่คะพี่เกจิ เดี๋ยวเปิดแผนที่ประเทศไทยให้ครับ")
         os.system("start https://www.google.co.th/maps/place/t...")
     
 #Starting Conversation
 
 time.sleep(2)
-speak("สวัสดีค่ะพี่ที วันนี้มีอะไรให้ช่วยไหมคะ")
+speak("สวัสดีค่ะพี่เกจิ วันนี้มีอะไรให้ช่วยไหมคะ")
 
 while 1:
     data = recordAudio()
