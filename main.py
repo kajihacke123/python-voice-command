@@ -1,3 +1,4 @@
+import os
 import speech_recognition as sr
 from time import ctime
 import time
@@ -20,9 +21,7 @@ def recordAudio():
 #    Speech recognition using Google Speech Recognition
     data = ""
     try:
-#    Uses the default API key
-#    To use another API key: `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
-        data = r.recognize_google(audio,language="th")
+        data = r.recognize_google(audio, language="th")
         print("You said: " + data)
     except sr.UnknownValueError:
         print("Google Speech Recognition could not understand audio")
@@ -105,7 +104,7 @@ def dekdoydev(data):
         speak("เปิดเพลงเพราะ ให้ครับ")
         os.system("start https://music.youtube.com/watch?v=JGwWNGJdvx8&list=RDAMVMJGwWNGJdvx8")
 
-    if "เปิด Youtube" in data:
+    if "เปิด YouTube" in data:
         speak("เปิด Youtube ให้ครับ")
         os.system("start https://www.youtube.com/")
 
@@ -116,6 +115,10 @@ def dekdoydev(data):
     if "เปิด Steam" in data:
         speak("เปิด steam ให้ครับ")
         os.system("start steam")
+
+    if "เปิด Discord" in data:
+        speak("เปิด discord ให้ครับ")
+        os.system("start discord")
 #Starting Conversation
 
 time.sleep(2)
