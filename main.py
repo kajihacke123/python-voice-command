@@ -118,7 +118,7 @@ def dekdoydev(data):
 
     if "เปิดดิสคอร์ด" in data:
         speak("เปิด discord ให้ครับ")
-        os.system(r'"C:\Users\Kaji&Kan\AppData\Local\Discord\Update.exe" --processStart Discord.exe')
+        os.system(r'start "" "C:\Users\Kaji&Kan\AppData\Local\Discord\app-1.0.9175\Discord.exe"')
 #Starting Conversation
 
 time.sleep(2)
